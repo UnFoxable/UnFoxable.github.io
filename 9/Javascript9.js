@@ -32,10 +32,12 @@ function draw() {
     mouseY = chaikinsh(points[1],mouseY)
 
     rctx.moveTo(nextline[0], nextline[1]);
-    rctx.quadraticCurveTo(points[0][1], points[1][1], points[0][0], points[1][0])
+    // rctx.quadraticCurveTo(points[0][1], points[1][1], points[0][0], points[1][0])
+    // rctx.moveTo(points[0][0], points[1][0]);
 
-    rctx.moveTo(points[0][0], points[1][0]);
-    // rctx.lineTo(dcanvas.clientWidth*2, dcanvas.clientHeight/2);
+    rctx.lineTo(points[0][1], points[1][1]);
+    rctx.moveTo(points[0][1], points[1][1]);
+    rctx.lineTo(points[0][0], points[1][0]);
 
     nextline[0] = points[0][0];
     nextline[1] = points[1][0];
