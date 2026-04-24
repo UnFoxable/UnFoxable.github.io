@@ -72,13 +72,20 @@
     width: 4em;
 }
 
-#inptwidth {
+/* #inptwidth {
     opacity: 1;
     justify-self: center;
     cursor: pointer;
     width: 3em;
-}
+} */
 
 .sized {
     margin: 5px;
+}
+
+.num {
+    opacity: 1;
+    justify-self: center;
+    cursor: pointer;
+    width: 2.1em;
 }
