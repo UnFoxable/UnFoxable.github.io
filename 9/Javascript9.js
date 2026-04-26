@@ -334,14 +334,25 @@ document.querySelector('#import').addEventListener('click', (e) => {
             return response.blob();
         })
         .then((response) => {
-            image.src = URL.createObjectURL(response);
+            const reader = new FileReader()
+            reader.readAsDataURL(response)
+            reader.addEventListener('loadend', (e) => {
+                image.src = reader.result
+                rctx.drawImage(image, 0, 0)
+                display()
+            })
         });
 
         // image.src = importurl
-        rctx.drawImage(image, 0, 0)
-        udrdrecord()
-        setDataURL()
-        display()
+        // rctx.drawImage(image, 0, 0)
+        // udrdrecord()
+        // setDataURL()
+        // display()
+            // image.src = URL.createObjectURL(response);
+            // rctx.drawImage(image, 0, 0)
+            // udrdrecord()
+            // setDataURL()
+            // display()
     }
 
 })
