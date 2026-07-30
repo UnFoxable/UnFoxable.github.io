@@ -1,5 +1,9 @@
 # unfoxable.github.io
 
+Hello. Pay no heed, just a random thing I put here awhile back when I didn't understand github so well.
+Will prolly remove this repo at some point and do it properly.
+
+
 \- Routes -\
 [ScriptsforScripts](https://unfoxable.github.io/ScriptsforScripts)\
 [MovieReview](https://unfoxable.github.io/MovieReview)\
